@@ -1,0 +1,60 @@
+   1  cd lab1
+   2  cd src
+   3  background.sh &
+   4  ./background.sh &
+   5  qwerty > text.txt
+   6  cat text.txt
+   7  cd text.txt
+   8  rm text.txt
+   9  echo "qwerty" > text.txt
+   10  cat text.txt
+   11  delete
+   12  clear
+   13  wc -m text.txt
+   14  grep "cake" cake_rhymes.txt > with_cake.txt
+   15  cat with_cake.txt
+   16  rm 2>/dev/null
+   17  rm file 2>/dev/null
+   18  cd ..
+   19  rm 2>/dev/null
+   20  rm file 2>/dev/null
+   21  cd lab1
+   22  cd src
+   23  echo "Hello" > name.txt
+   24  rm name.txt 2>/dev/null
+   25  chmod +x hello.sh
+   26  ./hello.sh
+   27  nano script.sh
+   28  chmode +x script.sh
+   29  chmod +x script.sh
+   30  ./script.sh
+   31  nano average.sh
+   32  chmod +x average.sh
+   33  ./average.sh 1 2 3 4 5
+   34  chmod +x average.sh
+   35  ./average.sh 1 2 3 4 5
+   36  chmod +x average.sh
+   37  ./average.sh 1 2 3 4 5
+   38  chmod +x average.sh
+   39  ./average.sh 1 2 3 4 5
+   40  chmod +x average.sh
+   41  ./average.sh 1 2 3 4 5
+   42  nano generate.sh
+   43  chmode +x generate.sh
+   44  chmod +x generate.sh
+   45  ./generate.sh
+   46  cat numbers.txt
+   47  wc -l numbers.txt
+   48  chmod +x average.sh
+   49  xargs ./average.sh < numbers.txt
+   50  cd ..
+   51  git add lab1/src/average.sh
+   52  git add lab1/src/generate.sh
+   53  git add lab1/src/script.sh
+   54  git add lab1/src/with_cake.txt
+   55  git status
+   56  git commit -m "Добавлены average.sh, generate.sh, script.sh и with_cake.txt"
+   57  git push
+   58  cd lab1
+   59  cd src
+   60  history > commandsLab1.txt
