@@ -1,0 +1,74 @@
+    1  history
+    2  cd lab2
+    3  cd src
+    4  cd swap
+    5  gcc main.c swap.c -o swap_program
+    6  ./swap_program
+    7  cd ..
+    8  cd revert_string
+    9  gcc main.c revert_string.c -o revert_string
+   10  ./revert_string Hello
+   11  gcc -c -o revert_string.o revert_string.c
+   12  ar rcs librevert.a revert_string.o
+   13  gcc main.c -L. -lrevert -o program_static
+   14  ./program_static
+   15  ./program_static Hello
+   16  gcc -c -fPIC revert_string.c -o revert_string.o
+   17  gcc revert_string.o -shared -o librevert.so
+   18  gcc main.c -L. -lrevert -o program_dynamic
+   19  export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
+   20  ./program_dynamic
+   21  ./program_dynamic Hello
+   22  sudo apt -y install libcunit1 libcunit1-doc libcunit1-dev
+   23  cd .
+   24  cd ..
+   25  sudo apt -y install libcunit1 libcunit1-doc libcunit1-dev
+   26  cd ..
+   27  sudo apt -y install libcunit1 libcunit1-doc libcunit1-dev
+   28  cd ..
+   29  sudo apt -y install libcunit1 libcunit1-doc libcunit1-dev
+   30  sudo apt update
+   31  sudo apt -y update
+   32  sudo apt -y install libcunit1 libcunit1-doc libcunit1-dev
+   33  cd lab2
+   34  cd src
+   35  cd revert_string
+   36  gcc -o test test.c -lrevert -lcunit
+   37  gcc -o tests  tests.c -lrevert -lcunit
+   38  cd ..
+   39  cd tests
+   40  gcc -o tests  tests.c -lrevert -lcunit
+   41  gcc -o tests -L. tests.c -lrevert -lcunit
+   42  gcc -I../revert_string -o tests tests -L../revert_string -lrevert -lcunit
+   43  gcc -I../revert_string -o test_program tests -L../revert_string -lrevert -lcunit
+   44  gcc -I../revert_string -o test_program tests.c -L../revert_string -lrevert -lcunit
+   45  export LD_LIBRARY_PATH=../revert_string:$LD_LIBRARY_PATH
+   46  ./test_program
+   47  git add lab2/src/swap/swap.c
+   48  history > commandsLab2
+   49  rm commandsLab2
+   50  cd ..
+   51  mkdir commandsLab2
+   52  cd commandsLab2
+   53  history > commandsLab2
+   54  history
+   55  git add lab2/src/revert_string/revert_string.c
+   56  cd lab2
+   57  cd src
+   58  touch .gitignore
+   59  nano .gitignore
+   60  git status
+   61  git add lab2/commandsLab2/commandsLab2.txt
+   62  git add lab2/commandsLab2/commandsLab2
+   63  ls
+   64  cd ..
+   65  cd commandsLab2
+   66  mv commandsLab2 commandsLab2.txt
+   67  cd ..
+   68  cd src
+   69  git add .gitignore
+   70  git status
+   71  cd ..
+   72  cd commandsLab2
+   73  rm commandsLab2.txt
+   74  history > commandsLab2.txt

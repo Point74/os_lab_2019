@@ -1,0 +1,9 @@
+#Инорировать бинарные файлы
+librevert.a
+librevert.so
+program_dymanic
+program_static
+revert_string
+revert_string.o
+swap_program
+test_program
