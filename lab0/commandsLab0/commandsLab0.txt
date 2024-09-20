@@ -1,0 +1,29 @@
+    1  mkdir hello
+    2  cd hello
+    3  touch empty
+    4  cd ..
+    5  cp src/hello.c hello/
+    6  mv hello.c newhello.c
+    7  cd hello
+    8  mv hello.c newhello.c
+    9  cd ..
+   10  ./update.sh
+   11  ping ya.ru -c 5
+   12  gcc -v
+   13  cd lab0
+   14  cd hello
+   15  gcc newhello.c -o hello_world
+   16  ./hello_world
+   17  git add lab0/hello/empty
+   18  cd ..
+   19  git add lab0/hello/empty
+   20  git add lab0/hello/newhello.c
+   21  git status
+   22  cd lab0
+   23  mkdir
+   24  mkdir commandsLab0.txt
+   25  cd commandsLab0.txt
+   26  cd ..
+   27  mv commandsLab0.txt commandsLab0
+   28  cd commandsLab0
+   29  history > commandsLab0.txt
