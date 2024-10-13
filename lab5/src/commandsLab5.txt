@@ -1,0 +1,22 @@
+    1  cd lab5/src
+    2  gcc -o mutex mutex.c -lpthread
+    3  ./mutex
+    4  gcc -o mutex mutex.c -lpthread
+    5  ./mutex
+    6  nano factorial.c
+    7  gcc -o factorial factorial.c -lpthread
+    8  ./factorial --k 10 --pnum 4 --mod 10 
+    9  ./factorial -k 10 --pnum 4 --mod 10
+   10  ./factorial -k 10 --pnum=4 --mod=10
+   11  gcc -o factorial factorial.c -lpthread
+   12  ./factorial --k 10 --pnum 4 --mod 10
+   13  ./factorial --k 5 --pnum 2 --mod 100
+   14  nano deadlock_demo.c
+   15  gcc -o deadlock_demo deadlock_demo.c -lpthread
+   16  ./deadlock_demo
+   17  cd ../..
+   18  git add lab5/src/deadlock_demo.c
+   19  git add lab5/src/factorial.c
+   20  git add lab5/src/mutex.c
+   21  cd lab5/src
+   22  history > commandsLab5.txt
